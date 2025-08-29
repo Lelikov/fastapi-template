@@ -1,0 +1,12 @@
+# Ignore everything
+docs
+
+# Except for dependencies and source
+!/{{cookiecutter.project_name}}/**
+!/pyproject.toml
+!/poetry.lock
+{% if cookiecutter.is_service_with_database -%}
+!/alembic.ini
+!/alembic/**
+{%- endif %}
+!/.venv/**

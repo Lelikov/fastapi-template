@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: {{cookiecutter.repo_name}}-api
+  description: {{cookiecutter.project_title}} API
+  tags:
+    - python
+spec:
+  type: openapi
+  lifecycle: production
+  definition:
+    $text: https://{{cookiecutter.repo_name}}.com/openapi.json

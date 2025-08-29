@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: {{cookiecutter.repo_name}}
+spec:
+  targets:
+    - ./docs/api/component.yaml
+    - ./docs/api/component-api.yaml

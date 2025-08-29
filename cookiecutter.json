@@ -1,0 +1,10 @@
+{
+  "repo_name": "best-practices",
+  "project_title": "{{ cookiecutter.repo_name.replace('-', ' ').title() }}",
+  "project_name": "{{ cookiecutter.repo_name.replace('-', '_') }}",
+  "pascal_case_project_name": "{{ cookiecutter.project_title.replace(' ', '') }}",
+  "python_version": "3.12",
+  "is_service_with_database": [true, false],
+  "is_service_will_be_published_on_api_portal": [true, false],
+  "is_freeze_poetry_packages": [true, false]
+}
